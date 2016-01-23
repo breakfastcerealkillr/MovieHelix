@@ -1,0 +1,39 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.desc {
+margin-left: 15px;
+margin-right: 15px;
+margin-top: 7%;
+color:white;
+font-weight:bolder;
+  
+}
+
+.insert {
+margin-left: 15px;
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.name {
+margin-left: 15px;
+  font-size:50px;
+font-weight:bold;
+color: white;
+}
+
+.form group {
+margin-left: 15px;
+color:white;
+}
+
+.jumbotron {
+  background-image: url("http://i.imgur.com/I4n0Xlg.jpg");
+}
+
+.results {
+width: 500px;
+}
