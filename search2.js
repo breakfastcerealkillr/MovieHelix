@@ -35,4 +35,9 @@ var result = findById( myArray, 73 );
 document.write(result.silly);
 
 
+//variation of above
+
+var result = myArray.filter(function(v) {
+    return v.id === '45'; // Filter out the appropriate one
+})[0].foo; // Get result and access the foo property
 
