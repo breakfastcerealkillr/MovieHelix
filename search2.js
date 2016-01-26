@@ -8,3 +8,12 @@ myArray = [
 myArray.filter(function(a){ return a.Title == 'Solaris' })[0]
 
 
+//here is another method to try
+
+var lookup = {};
+for (var i = 0, len = array.length; i < len; i++) {
+    lookup[array[i].id] = array[i];
+
+  
+}
+
