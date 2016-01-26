@@ -17,3 +17,22 @@ for (var i = 0, len = array.length; i < len; i++) {
   
 }
 
+//yet another method
+
+var myArray = [{'id':'73','fool':'bars','silly':'rabbit'},{'id':'45','foo':'bar'}];
+
+
+function findById(source, id) {
+    return source.filter(function( obj ) {
+        // coerce both obj.id and id to numbers 
+        // for val & type comparison
+        return +obj.id === +id;
+    })[ 0 ];
+}
+
+var result = findById( myArray, 73 );
+
+document.write(result.silly);
+
+
+
