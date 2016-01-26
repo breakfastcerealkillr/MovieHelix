@@ -41,3 +41,13 @@ var result = myArray.filter(function(v) {
     return v.id === '45'; // Filter out the appropriate one
 })[0].foo; // Get result and access the foo property
 
+
+//jquery version
+
+myArray = [{'id':'73','foo':'bar'},{'id':'45','foot':'bark'}];
+
+var found = $.map(myArray, function(val) {
+    return val.id == '45' ? val.foot : null;
+});
+
+alert(found.length + "\n" + found[0]);
