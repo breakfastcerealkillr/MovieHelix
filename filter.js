@@ -1,14 +1,14 @@
-restaurants =
+movies =
   [
-    {"restaurant" : { "name" : "McDonald's", "food" : "burger" }},
-    {"restaurant" : { "name" : "KFC",        "food" : "chicken" }},
-    {"restaurant" : { "name" : "Pizza Hut",  "food" : "pizza" }}
+    {"movie" : { "title" : "The Matrix Reloaded", "actor" : "Keanu Reeves" }},
+    {"movie" : { "title" : "Fight Club",        "actor" : "Edward Norton" }},
+    {"movie" : { "title" : "Strange Days",  "actor" : "Ralph Fiennes" }}
   ];
  
-for(var i = 0; i < restaurants.length; i++)
+for(var i = 0; i < movies.length; i++)
 {
-  if(restaurants[i].restaurant.food == 'pizza')
+  if(movies[i].movie.actor == 'Edward Norton')
   {
-    document.write(restaurants[i].restaurant.name)
+    document.write(movies[i].movie.title)
   }
 }
