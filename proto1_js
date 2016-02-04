@@ -1,0 +1,54 @@
+//DATASET HERE
+movies =
+  [
+    {"movie" : { "title" : "The Matrix Reloaded", "actor" : "Keanu Reeves" }},
+    {"movie" : { "title" : "Fight Club",        "actor" : "Edward Norton","releasedate":"2001", "budget":"40 Million USD" }},
+    {"movie" : { "title" : "Strange Days",  "actor" : "Ralph Fiennes" }}
+  ];
+  
+var title1  = [];
+var title2   = [];
+
+
+var titleInput1  = document.getElementById("title1");
+var titleInput2  = document.getElementById("title2");
+
+
+var messageBox  = document.getElementById("display");
+
+function insert ( ) {
+ title1.push( titleInput1.value );
+ title2.push( titleInput2.value );
+
+for (var i = 0; i < movies.length; i++)
+{
+  if
+  (movies[i].movie.title == title1[0]) 
+  
+ // && movies[i].movie.title == title2[0]);
+  {
+  
+ reset_Display();
+}
+
+}
+}
+
+
+function reset_Display () {
+  // Clear our fields
+  titleInput1.value = "";
+  titleInput2.value = "";
+  
+  // Show our output
+  messageBox.innerHTML = "";
+  
+  messageBox.innerHTML += "Title1: " + title1.join(", ") + "<br/>";
+  messageBox.innerHTML += "Title2: " + title2.join(", ") + "<br/>";
+ 
+}
+
+//COMPARISON SCRIPT HERE
+
+
+  
