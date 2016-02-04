@@ -1,0 +1,10 @@
+<body>
+  <form>
+    <h1>Please enter search data</h1>
+    <input id="title1" type="text" placeholder="Title1" />
+    <input id="title2" type="text" placeholder="Title2" />
+    
+    <input type="button" value="Save/Show" onclick="insert()" />
+  </form><br>
+  <div id="display"></div>
+</body>
