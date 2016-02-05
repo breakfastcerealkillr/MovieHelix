@@ -44,6 +44,6 @@ function reset_Display () {
   messageBox.innerHTML = "";
   
   messageBox.innerHTML += "TitleInput1: " + title1.join(", ") + "<br/>";
-  messageBox.innerHTML += "Title2: " + titleTwoArray.join(", ") + "<br/>";
+  messageBox.innerHTML += "TitleInput2: " + title2.join(", ") + "<br/>";
  
 }
