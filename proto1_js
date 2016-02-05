@@ -1,31 +1,32 @@
 //DATASET HERE
 movies =
   [
-    {"movie" : { "title" : "The Matrix Reloaded", "actor" : "Keanu Reeves", "releasedate":"1999", "budget":"90 Million USD"  }},
+    {"movie" : { "title" : "The Matrix", "actor" : "Keanu Reeves", "releasedate":"1999", "budget":"90 Million USD"  }},
     {"movie" : { "title" : "Fight Club", "actor" : "Edward Norton", "releasedate":"2001", "budget":"40 Million USD" }},
-    {"movie" : { "title" : "Strange Days",  "actor" : "Ralph Fiennes", "releasedate":"1997", "budget":"60 Million USD"  }}
+    {"movie" : { "title" : "Strange Days","actor" : "Ralph Fiennes", "releasedate":"1997", "budget":"60 Million USD"  }}
   ];
   
 var title1Array  = [];
 var title2Array  = [];
 
-
 var titleInput1  = document.getElementById("title1");
 var titleInput2  = document.getElementById("title2");
-
 
 var messageBox  = document.getElementById("display");
 
 function insert ( ) {
  title1.push( titleInput1.value );
  title2.push( titleInput2.value );
+ 
+//COMPARISON SCRIPT HERE
 
 for (var i = 0; i < movies.length; i++)
 {
   if
   (movies[i].movie.title == title1Array[0]) 
   
- // && movies[i].movie.title == title2Array[0]);
+ //trying to get the if statement to take 2 conditions 
+ //&& movies[i].movie.title == title2Array[0]);
   {
   
  reset_Display();
@@ -33,7 +34,6 @@ for (var i = 0; i < movies.length; i++)
 
 }
 }
-
 
 function reset_Display () {
   // Clear our fields
@@ -47,8 +47,3 @@ function reset_Display () {
   messageBox.innerHTML += "Title2: " + title2Array.join(", ") + "<br/>";
  
 }
-
-//COMPARISON SCRIPT HERE
-
-
-  
