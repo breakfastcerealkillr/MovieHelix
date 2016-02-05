@@ -1,9 +1,9 @@
 //DATASET HERE
 movies =
   [
-    {"movie" : { "title" : "The Matrix Reloaded", "actor" : "Keanu Reeves" }},
-    {"movie" : { "title" : "Fight Club",        "actor" : "Edward Norton","releasedate":"2001", "budget":"40 Million USD" }},
-    {"movie" : { "title" : "Strange Days",  "actor" : "Ralph Fiennes" }}
+    {"movie" : { "title" : "The Matrix Reloaded", "actor" : "Keanu Reeves", "releasedate":"1999", "budget":"90 Million USD"  }},
+    {"movie" : { "title" : "Fight Club", "actor" : "Edward Norton", "releasedate":"2001", "budget":"40 Million USD" }},
+    {"movie" : { "title" : "Strange Days",  "actor" : "Ralph Fiennes", "releasedate":"1997", "budget":"60 Million USD"  }}
   ];
   
 var title1Array  = [];
