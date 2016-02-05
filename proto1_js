@@ -6,8 +6,8 @@ movies =
     {"movie" : { "title" : "Strange Days",  "actor" : "Ralph Fiennes" }}
   ];
   
-var title1  = [];
-var title2   = [];
+var title1Array  = [];
+var title2Array  = [];
 
 
 var titleInput1  = document.getElementById("title1");
@@ -23,9 +23,9 @@ function insert ( ) {
 for (var i = 0; i < movies.length; i++)
 {
   if
-  (movies[i].movie.title == title1[0]) 
+  (movies[i].movie.title == title1Array[0]) 
   
- // && movies[i].movie.title == title2[0]);
+ // && movies[i].movie.title == title2Array[0]);
   {
   
  reset_Display();
@@ -43,8 +43,8 @@ function reset_Display () {
   // Show our output
   messageBox.innerHTML = "";
   
-  messageBox.innerHTML += "Title1: " + title1.join(", ") + "<br/>";
-  messageBox.innerHTML += "Title2: " + title2.join(", ") + "<br/>";
+  messageBox.innerHTML += "Title1: " + title1Array.join(", ") + "<br/>";
+  messageBox.innerHTML += "Title2: " + title2Array.join(", ") + "<br/>";
  
 }
 
