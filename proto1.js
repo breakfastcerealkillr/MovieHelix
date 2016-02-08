@@ -43,7 +43,7 @@ function indexMovie(movie) {
       set.push(movie[key]);
     }
   }
-  document.write (set);
+  return set;
 }
 
 /*compare movie 1 first value to all values of movie 2
