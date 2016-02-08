@@ -1,7 +1,7 @@
 //DATASET HERE
 var movies =
   [
-    { "title" : "a", "actor" : "Keanu Reeves", "releasedate":"1999", "budget":"90 Million USD"  },
+    { "title" : "a", "actor" : "Keanu Reeves", "releasedate":"1999", "budget":"40 Million USD"  },
     { "title" : "b", "actor" : "Edward Norton", "releasedate":"2001", "budget":"40 Million USD" },
     { "title" : "c", "actor" : "Ralph Fiennes", "releasedate":"1997", "budget":"60 Million USD"}
   ];
@@ -43,8 +43,20 @@ function indexMovie(movie) {
       set.push(movie[key]);
     }
   }
-  return set;
+  document.write (set);
 }
+
+/*compare movie 1 first value to all values of movie 2
+for (var i = 0; i < set.length; i++)
+  {
+    if (set[i] == movies.budget.value)
+    {
+      document.write("yes")
+     break;
+    }
+    
+    
+work above this point*/
 
 function clearLog () {
   while( log.firstChild ){
