@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Enter two movie titles</h1>
+<input id="title1" type="text" onchange="searchMovie(this.value)" placeholder="Title1" />
+<input id="title2" type="text" onchange="searchMovie(this.value)" placeholder="Title2" />
+
+<input type="button" value="Search" id="searchButton" onclick="lookupMovies()" disabled="true" />
+<br>
+<div id="display">
+    <ul id="log"></ul>
+</div>
+
+<script src="proto2.js"></script>
+<script src="movieApi.js"></script>
+</body>
+</html>
